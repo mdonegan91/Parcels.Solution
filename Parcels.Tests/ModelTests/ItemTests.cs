@@ -35,5 +35,12 @@ namespace Parcels.Tests
       int[] result = newItem.Dimension;
       CollectionAssert.AreEqual(updatedDimension, result);
     }
+  [TestMethod]
+    public void GetAll_ReturnsEmptyList_ItemList()
+    {
+      List<Item> newList = new List<Item> { };
+      List<Item> result = Item.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
