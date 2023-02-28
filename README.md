@@ -24,7 +24,7 @@ An application where the user can submit a form with the dimensions and weight o
 
 ## Known Bugs
 
-NA
+None at this time
 
 ## ☕ License ☕
 Enjoy the app! If you have questions or suggestions for fixing the code, please contact me!
