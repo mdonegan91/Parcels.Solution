@@ -9,7 +9,7 @@
 * dotnet script REPL
 
 ## Description 
-An application where the user can submit a form with the dimensions and weight of a Parcel, and you can use the data in the form to instantiate a Parcel object and display its dimensions and weight. 
+An application where users can submit a form with the dimensions and weight of their Parcel. The site will return the "cost" to ship their Parcel.
 
 ## ☕ Setup Instructions ☕
 

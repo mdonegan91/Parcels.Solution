@@ -6,6 +6,7 @@ namespace Parcels.Models
   public class Item
   {
     public int[] Dimension { get; set; }
+    public int Weight {get; set;}
 
     private static List<int[]> _instances = new List<int[]> { };
 
@@ -13,10 +14,11 @@ namespace Parcels.Models
     {
 
     }
-    public Item(int[] dimension)
+    public Item(int[] dimension, int weight)
     {
       Dimension = dimension;
-      _instances.Add(dimension);
+      Weight = weight;
+      _instances.Add(this);
     }
 
     public static List<int[]> GetAll()
