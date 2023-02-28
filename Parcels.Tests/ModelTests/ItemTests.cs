@@ -20,8 +20,20 @@ namespace Parcels.Tests
     {
       Item newItem = new Item();
       int[] dimension = {10, 15, 20};
-      int result = newItem.Dimension;
-      Assert.AreEqual(dimension, result);
+      newItem.Dimension = dimension;
+      int[] result = newItem.Dimension;
+      CollectionAssert.AreEqual(dimension, result);
+    }
+
+    [TestMethod]
+    public void SetDimension_Dimension_Int()
+    {
+      Item newItem = new Item();
+      int[] dimension = {10, 15, 20};
+      int[] updatedDimension = {8, 10, 12};
+      newItem.Dimension = updatedDimension;
+      int[] result = newItem.Dimension;
+      CollectionAssert.AreEqual(updatedDimension, result);
     }
   }
 }
