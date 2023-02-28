@@ -9,7 +9,7 @@
 * dotnet script REPL
 
 ## Description 
-A console application that allows users to to "buy" bread and pastries from a fictional bakery.
+An application where the user can submit a form with the dimensions and weight of a Parcel, and you can use the data in the form to instantiate a Parcel object and display its dimensions and weight. 
 
 ## ☕ Setup Instructions ☕
 
