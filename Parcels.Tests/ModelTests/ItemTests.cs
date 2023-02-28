@@ -14,5 +14,14 @@ namespace Parcels.Tests
       Item newItem = new Item();
       Assert.AreEqual(typeof(Item), newItem.GetType());
     }
+
+    [TestMethod]
+    public void GetInstanceOfDimension_Item_Int()
+    {
+      Item newItem = new Item();
+      int[] dimension = {10, 15, 20};
+      int result = newItem.Dimension;
+      Assert.AreEqual(dimension, result);
+    }
   }
 }
