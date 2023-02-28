@@ -64,5 +64,15 @@ namespace Parcels.Tests
       int result = newItem.Weight;
       Assert.AreEqual(weight, result);
     }
+
+      [TestMethod]
+    public void SetWeight_Weight_Int()
+    {
+      Item newItem = new Item();
+      int weight2 = 20;
+      newItem.Weight = weight2;
+      int result = newItem.Weight;
+      Assert.AreEqual(weight2, result);
+    }
   }
 }
