@@ -54,5 +54,15 @@ namespace Parcels.Tests
       List<int[]> result = Item.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetInstanceOfWeight_Item_Int()
+    {
+      Item newItem = new Item();
+      int weight = 10;
+      newItem.Weight = weight;
+      int result = newItem.Weight;
+      Assert.AreEqual(weight, result);
+    }
   }
 }
