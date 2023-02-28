@@ -47,10 +47,12 @@ namespace Parcels.Tests
     public void GetAll_ReturnsItems_ItemList()
     {
       int[] dimension1 = { 10, 15, 20 };
+      int weight1 = 10;
       int[] dimension2 = { 8, 10, 12 };
-      Item newItem1 = new Item(dimension1);
-      Item newItem2 = new Item(dimension2);
-      List<int[]> newList = new List<int[]> { dimension1, dimension2 };
+      int weight2 = 15;
+      Item newItem1 = new Item(dimension1, weight1);
+      Item newItem2 = new Item(dimension2, weight2);
+      List<int[]> newList = new List<int[]> { newItem1, newItem2};
       List<int[]> result = Item.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
